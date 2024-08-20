@@ -16,13 +16,31 @@
     <div class="container landing-container">
         <div class="row text-center">
             <div class="col-md-6 mx-auto">
-                <header class="jumbotron">
-                    <div class="profile-images">
-                        <img src="static/imgs/musician.jpg" alt="Musician" class="profile-img">
+                <header class="jumbotron profile-card">
+                    <div class="container profile-card-front">
+                        <div class="profile-images">
+                            <img src="static/imgs/musician.jpg" alt="Musician" class="profile-img">
+                        </div>
+                        <h1 class="display-4">Esvin Joshua</h1>
+                        <div class="about-texts">
+                            <p class="lead">Developer, Musician, Student</p>
+                        </div>
                     </div>
-                    <h1 class="display-4">Esvin Joshua</h1>
-                    <div class="about-texts">
-                        <p class="lead">Developer, Musician, Student</p>
+                    <div class="display-3 profile-card-back" style="display: none;">
+                        <section id="contact" class="container text-center">
+                            <h2 class="section-title">Contact: </h2>
+                            <a href="https://www.instagram.com/esvinjoshua" class="btn btn-danger m-2"
+                                target="_blank"><i class="fab fa-instagram"></i>
+                                Instagram</a>
+                            <a href="https://www.linkedin.com/in/esvin-joshua-a84215291/" class="btn btn-primary m-2"
+                                target="_blank"><i class="fab fa-linkedin"></i>
+                                LinkedIn</a>
+                            <a href="mailto:Joshua.Esvin312@gmail.com" class="btn btn-danger m-2" target="_blank"><i
+                                    class="fas fa-envelope"></i> Gmail</a>
+                        </section>
+                    </div>
+                    <div class="container">
+                        <a class="btn btn-outline-primary" onclick="flipCard()">Turn Over</a>
                     </div>
                 </header>
             </div>
@@ -42,7 +60,7 @@
     <hr class="my-5">
 
     <section id="skills" class="container my-5">
-        <h2 class="section-title text-center">Skills & Tools 🛠️</h2>
+        <h2 class="section-title text-center">Skills</h2>
         <div class="row text-center skill-div">
 
             <div class="col-sm-4 skill-items">
@@ -132,7 +150,7 @@
     <hr class="my-5">
 
     <section id="projects" class="container my-5">
-        <h2 class="section-title text-center">Projects 💼 - Hover for Info</h2>
+        <h2 class="section-title text-center">Projects (Hover for Info)</h2>
         <div class="row">
             <div class="col-md-6">
                 <div class="card project-card mb-4">
@@ -251,26 +269,14 @@
             </div>
     </section>
 
-    <hr class=" my-5">
-
-    <section id="contact" class="container my-5 text-center">
-        <h2 class="section-title">Connect with Me 🌐</h2>
-        <a href="https://www.instagram.com/esvinjoshua" class="btn btn-danger m-2" target="_blank"><i
-                class="fab fa-instagram"></i>
-            Instagram</a>
-        <a href="https://www.linkedin.com/in/esvin-joshua-a84215291/" class="btn btn-primary m-2" target="_blank"><i
-                class="fab fa-linkedin"></i>
-            LinkedIn</a>
-        <a href="mailto:Joshua.Esvin312@gmail.com" class="btn btn-danger m-2" target="_blank"><i
-                class="fas fa-envelope"></i> Gmail</a>
-    </section>
+    <hr class="my-5">
 
     <footer class="footer text-center py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto">
                     <p>Thanks for stopping by! 😄</p>
-                    <p>&copy; 2024 Esvin Joshua</p>
+                    <p>&copy; Personal Portfolio - 2024 Esvin Joshua</p>
                 </div>
                 <div class="col-md-4 mx-auto">
                     Hosted on
@@ -392,19 +398,16 @@
                     });
                 });
             });
-
-            const aboutTexts = document.querySelector(".about-texts");
-            const aboutText = aboutTexts.textContent;
-            aboutTexts.textContent = "";
-            let aboutTextIndex = 0;
-
-            setInterval(() => {
-                if (aboutTextIndex < aboutText.length) {
-                    aboutTexts.textContent += aboutText[aboutTextIndex];
-                    aboutTextIndex++;
-                }
-            }, 50);
         });
+
+
+        function flipCard() {
+            const profileCardFront = document.querySelector(".profile-card-front");
+            const profileCardBack = document.querySelector(".profile-card-back");
+
+            profileCardFront.style.display = profileCardFront.style.display === "none" ? "block" : "none";
+            profileCardBack.style.display = profileCardBack.style.display === "none" ? "block" : "none";
+        }
     </script>
 </body>
 

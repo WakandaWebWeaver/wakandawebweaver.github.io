@@ -48,7 +48,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to right, #9f69da, #4567a0);
   color: white;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   font-family: "Ubuntu", sans-serif;
   height: fit-content;
 }
@@ -76,8 +76,8 @@ body {
 .profile-img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  transition: transform 0.6s ease-in-out;
+  border-radius: 10%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .profile-img:hover {
