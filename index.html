@@ -16,10 +16,11 @@
     <div class="container landing-container">
         <div class="row text-center">
             <div class="col-md-6 mx-auto">
-                <header class="jumbotron profile-card">
+                <header class="jumbotron profile-card border border-white">
                     <div class="container profile-card-front">
                         <div class="profile-images">
-                            <img src="static/imgs/musician.jpg" alt="Musician" class="profile-img">
+                            <img src="static/imgs/musician.jpg" alt="Musician"
+                                class="profile-img border border-success">
                         </div>
                         <h1 class="display-4">Esvin Joshua</h1>
                         <div class="about-texts">
@@ -40,18 +41,21 @@
                         </section>
                     </div>
                     <div class="container">
-                        <a class="btn btn-outline-primary" onclick="flipCard()">Turn Over</a>
+                        <a class="btn btn-outline-primary text-light flip-btn" onclick="flipCard()">Turn Over</a>
                     </div>
                 </header>
             </div>
             <div class="col-md-6">
                 <section id="about" class="container my-5">
-                    <h2 class="section-title text-center">About Me 🚀</h2>
-                    <p class="text-center">Self-Taught Developer, I love building things that make a difference. I'm
-                        currently
-                        pursuing my B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine
-                        Learning) at
-                        SIoE&T, Hyderabad, India. Take risks and push boundaries.</p>
+                    <div class="container text-center about-text">
+                        <h2 class="section-title text-center">About Me 🚀</h2>
+                        <p class="text-center">Self-Taught Developer, I love building things that make a
+                            difference. I'm
+                            currently
+                            pursuing my B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine
+                            Learning) at
+                            SIoE&T, Hyderabad, India. Take risks and push boundaries.</p>
+                    </div>
                 </section>
             </div>
         </div>
@@ -63,88 +67,106 @@
         <h2 class="section-title text-center">Skills</h2>
         <div class="row text-center skill-div">
 
+            <!-- Languages Section -->
             <div class="col-sm-4 skill-items">
                 <h3>Languages 🧩</h3>
-                <div>
-                    <img src="https://img.shields.io/badge/Python-%233776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"
-                        alt="Python">
-                    <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"
-                        alt="JavaScript">
-                    <img src="https://img.shields.io/badge/C-%23A8B9CC.svg?&style=for-the-badge&logo=C&logoColor=black"
-                        alt="C">
-                    <img src="https://img.shields.io/badge/CSS-%231572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"
-                        alt="CSS">
-                    <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"
-                        alt="HTML">
-                    <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?&style=for-the-badge&logo=Java&logoColor=white"
-                        alt="Java">
-                    <img src="https://img.shields.io/badge/Dart-%230175C2.svg?&style=for-the-badge&logo=Dart&logoColor=white"
-                        alt="Dart">
+                <div class="skill-band">
+                    <div class="skill-band-inner">
+                        <img src="https://img.shields.io/badge/Python-%233776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"
+                            alt="Python">
+                        <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"
+                            alt="JavaScript">
+                        <img src="https://img.shields.io/badge/C-%23A8B9CC.svg?&style=for-the-badge&logo=C&logoColor=black"
+                            alt="C">
+                        <img src="https://img.shields.io/badge/CSS-%231572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"
+                            alt="CSS">
+                        <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"
+                            alt="HTML">
+                        <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?&style=for-the-badge&logo=Java&logoColor=white"
+                            alt="Java">
+                        <img src="https://img.shields.io/badge/Dart-%230175C2.svg?&style=for-the-badge&logo=Dart&logoColor=white"
+                            alt="Dart">
+                    </div>
                 </div>
+                <hr>
                 <h4 class="mt-3">Other Languages 🔦</h4>
-                <div>
-                    <img src="https://img.shields.io/badge/Markdown-%23000000.svg?&style=for-the-badge&logo=Markdown&logoColor=white"
-                        alt="Markdown">
-                    <img src="https://img.shields.io/badge/JSON-%23000000.svg?&style=for-the-badge&logo=JSON&logoColor=blue"
-                        alt="JSON">
+                <div class="skill-band">
+                    <div class="skill-band-inner">
+                        <img src="https://img.shields.io/badge/Markdown-%23000000.svg?&style=for-the-badge&logo=Markdown&logoColor=white"
+                            alt="Markdown">
+                        <img src="https://img.shields.io/badge/JSON-%23000000.svg?&style=for-the-badge&logo=JSON&logoColor=blue"
+                            alt="JSON">
+                    </div>
                 </div>
+                <hr>
             </div>
 
+            <!-- Technologies & Frameworks Section -->
             <div class="col-sm-4 skill-items">
                 <h3>Technologies & Frameworks 🔬 ⚒️</h3>
-                <div>
-                    <img src="https://img.shields.io/badge/React-%2361DAFB.svg?&style=for-the-badge&logo=React&logoColor=black"
-                        alt="React">
-                    <img src="https://img.shields.io/badge/Django-%23092E20.svg?&style=for-the-badge&logo=Django&logoColor=white"
-                        alt="Django">
-                    <img src="https://img.shields.io/badge/Flask-%23000.svg?&style=for-the-badge&logo=Flask&logoColor=white"
-                        alt="Flask">
-                    <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white"
-                        alt="Flutter">
-                    <img src="https://img.shields.io/badge/Git-%23F05032.svg?&style=for-the-badge&logo=Git&logoColor=white"
-                        alt="Git">
-                    <img src="https://img.shields.io/badge/Docker-%232496ED.svg?&style=for-the-badge&logo=Docker&logoColor=white"
-                        alt="Docker">
-                    <img src="https://img.shields.io/badge/Firebase-%23FFCA28.svg?&style=for-the-badge&logo=Firebase&logoColor=black"
-                        alt="Firebase">
-                    <img src="https://img.shields.io/badge/SQLite-%23003B57.svg?&style=for-the-badge&logo=SQLite&logoColor=white"
-                        alt="SQLite">
-                    <img src="https://img.shields.io/badge/Heroku-%23430098.svg?&style=for-the-badge&logo=Heroku&logoColor=white"
-                        alt="Heroku">
-                    <img src="https://img.shields.io/badge/Node.js-%23339933.svg?&style=for-the-badge&logo=Node.js&logoColor=white"
-                        alt="Node.js">
-                    <img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?&style=for-the-badge&logo=Bootstrap&logoColor=white"
-                        alt="Bootstrap">
+                <div class="skill-band">
+                    <div class="skill-band-inner">
+                        <img src="https://img.shields.io/badge/React-%2361DAFB.svg?&style=for-the-badge&logo=React&logoColor=black"
+                            alt="React">
+                        <img src="https://img.shields.io/badge/Django-%23092E20.svg?&style=for-the-badge&logo=Django&logoColor=white"
+                            alt="Django">
+                        <img src="https://img.shields.io/badge/Flask-%23000.svg?&style=for-the-badge&logo=Flask&logoColor=white"
+                            alt="Flask">
+                        <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white"
+                            alt="Flutter">
+                        <img src="https://img.shields.io/badge/Git-%23F05032.svg?&style=for-the-badge&logo=Git&logoColor=white"
+                            alt="Git">
+                        <img src="https://img.shields.io/badge/Docker-%232496ED.svg?&style=for-the-badge&logo=Docker&logoColor=white"
+                            alt="Docker">
+                        <img src="https://img.shields.io/badge/Firebase-%23FFCA28.svg?&style=for-the-badge&logo=Firebase&logoColor=black"
+                            alt="Firebase">
+                        <img src="https://img.shields.io/badge/SQLite-%23003B57.svg?&style=for-the-badge&logo=SQLite&logoColor=white"
+                            alt="SQLite">
+                        <img src="https://img.shields.io/badge/Heroku-%23430098.svg?&style=for-the-badge&logo=Heroku&logoColor=white"
+                            alt="Heroku">
+                        <img src="https://img.shields.io/badge/Node.js-%23339933.svg?&style=for-the-badge&logo=Node.js&logoColor=white"
+                            alt="Node.js">
+                        <img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?&style=for-the-badge&logo=Bootstrap&logoColor=white"
+                            alt="Bootstrap">
+                    </div>
                 </div>
+                <hr>
             </div>
 
+            <!-- OS Experience Section -->
             <div class="col-sm-4 skill-items">
                 <h3>OS Experience 💻</h3>
-                <div>
-                    <img src="https://img.shields.io/badge/Linux-%23FCC624.svg?&style=for-the-badge&logo=Linux&logoColor=black"
-                        alt="Linux">
-                    <img src="https://img.shields.io/badge/Windows-%230078D6.svg?&style=for-the-badge&logo=Windows&logoColor=white"
-                        alt="Windows">
-                    <img src="https://img.shields.io/badge/MacOS-%23999999.svg?&style=for-the-badge&logo=Apple&logoColor=white"
-                        alt="MacOS">
+                <div class="skill-band">
+                    <div class="skill-band-inner">
+                        <img src="https://img.shields.io/badge/Linux-%23FCC624.svg?&style=for-the-badge&logo=Linux&logoColor=black"
+                            alt="Linux">
+                        <img src="https://img.shields.io/badge/Windows-%230078D6.svg?&style=for-the-badge&logo=Windows&logoColor=white"
+                            alt="Windows">
+                        <img src="https://img.shields.io/badge/MacOS-%23999999.svg?&style=for-the-badge&logo=Apple&logoColor=white"
+                            alt="MacOS">
+                    </div>
                 </div>
+                <hr>
                 <h3 class="mt-3">Tools 🛠️</h3>
-                <div>
-                    <img src="https://img.shields.io/badge/PyCharm-%23000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=green"
-                        alt="PyCharm">
-                    <img src="https://img.shields.io/badge/Jupyter-%23F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white"
-                        alt="Jupyter">
-                    <img src="https://img.shields.io/badge/GitKraken-%236E5494.svg?&style=for-the-badge&logo=GitKraken&logoColor=white"
-                        alt="GitKraken">
-                    <img src="https://img.shields.io/badge/Netlify-%2300C7B7.svg?&style=for-the-badge&logo=Netlify&logoColor=white"
-                        alt="Netlify">
-                    <img src="https://img.shields.io/badge/MongoDB-%2347A248.svg?&style=for-the-badge&logo=MongoDB&logoColor=white"
-                        alt="MongoDB">
+                <div class="skill-band">
+                    <div class="skill-band-inner">
+                        <img src="https://img.shields.io/badge/PyCharm-%23000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=green"
+                            alt="PyCharm">
+                        <img src="https://img.shields.io/badge/Jupyter-%23F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white"
+                            alt="Jupyter">
+                        <img src="https://img.shields.io/badge/GitKraken-%236E5494.svg?&style=for-the-badge&logo=GitKraken&logoColor=white"
+                            alt="GitKraken">
+                        <img src="https://img.shields.io/badge/Netlify-%2300C7B7.svg?&style=for-the-badge&logo=Netlify&logoColor=white"
+                            alt="Netlify">
+                        <img src="https://img.shields.io/badge/MongoDB-%2347A248.svg?&style=for-the-badge&logo=MongoDB&logoColor=white"
+                            alt="MongoDB">
+                    </div>
                 </div>
+                <hr>
             </div>
-
         </div>
     </section>
+
 
 
     <hr class="my-5">
@@ -160,7 +182,7 @@
                             platform for tracking users, donations and events. Built with Flask & MongoDB</p>
                         <a href="https://github.com/wakandawebweaver/Organisation-Management-Tool"
                             class="btn btn-outline-primary" target="_blank">
-                            View on GitHub
+                            View
                         </a>
                         <hr>
                         <div class="brand-logos">
@@ -182,7 +204,7 @@
                         </p>
                         <a href="https://github.com/wakandawebweaver/HiveMind" class="btn btn-outline-primary"
                             target="_blank">
-                            View on GitHub
+                            View
                         </a>
                         <hr>
                         <div class="brand-logos">
@@ -203,7 +225,7 @@
                         </p>
                         <a href="https://github.com/wakandawebweaver/nudity_detection" class="btn btn-outline-primary"
                             target="_blank">
-                            View on GitHub
+                            View
                         </a>
                         <hr>
                         <div class="brand-logos">
@@ -223,7 +245,7 @@
                             cJSON.</p>
                         <a href="https://github.com/wakandawebweaver/Bank-Management-System"
                             class="btn btn-outline-primary" target="_blank">
-                            View on GitHub
+                            View
                         </a>
                         <hr>
                         <div class="brand-logos">
@@ -242,7 +264,7 @@
                             images and making posts.</p>
                         <a href="https://github.com/wakandawebweaver/vchat" class="btn btn-outline-primary"
                             target="_blank">
-                            View on GitHub
+                            View
                         </a>
                         <hr>
                         <div class="brand-logos">
@@ -257,13 +279,13 @@
             <div class="col-md-6">
                 <div class="card project-card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">More on GitHub</h5>
+                        <h5 class="card-title">More on <a href="https://www.github.com/wakandawebweaver"
+                                class="btn btn-outline-primary" target="_blank">
+                                <img src="static/imgs/gh_logo.png" alt="GitHub Logo" class="brand-logo"
+                                    style="width: auto;">
+                            </a></h5>
                         <p class="card-text"></p>
-                        <a href="https://www.github.com/wakandawebweaver" class="btn btn-outline-primary"
-                            target="_blank">
-                            <img src="static/imgs/gh_logo.png" alt="GitHub Logo" class="brand-logo"
-                                style="width: auto;">
-                        </a>
+
                     </div>
                 </div>
             </div>
@@ -276,7 +298,7 @@
             <div class="row">
                 <div class="col-md-6 mx-auto">
                     <p>Thanks for stopping by! 😄</p>
-                    <p>&copy; Personal Portfolio - 2024 Esvin Joshua</p>
+                    <p>&copy; 2024 Esvin Joshua</p>
                 </div>
                 <div class="col-md-4 mx-auto">
                     Hosted on
@@ -343,10 +365,6 @@
                     title: "VChat - Flutter Chat App",
                     description: "A Chat App built with Flutter & Firebase. Features include sending messages, images and making posts."
                 },
-                {
-                    title: "View More on GitHub",
-                    description: ""
-                }
             ];
 
             projectCards.forEach((card, index) => {
@@ -386,8 +404,11 @@
 
                 card.addEventListener("mouseleave", () => {
 
-                    card.querySelector(".card-title").textContent = defaultInfoForProjects[index].title;
-                    card.querySelector(".card-text").textContent = defaultInfoForProjects[index].description;
+
+                    if (card.querySelector(".card-title").textContent !== "More on ") {
+                        card.querySelector(".card-title").textContent = defaultInfoForProjects[index].title;
+                        card.querySelector(".card-text").textContent = defaultInfoForProjects[index].description;
+                    }
 
                     aboutSection.style.filter = "blur(0)";
                     skillsSection.style.filter = "blur(0)";
@@ -398,6 +419,16 @@
                     });
                 });
             });
+
+            document.querySelectorAll('.skill-band').forEach(band => {
+                band.addEventListener('mouseover', () => {
+                    band.querySelector('.skill-band-inner').style.animationPlayState = 'paused';
+                });
+                band.addEventListener('mouseout', () => {
+                    band.querySelector('.skill-band-inner').style.animationPlayState = 'running';
+                });
+            });
+
         });
 
 

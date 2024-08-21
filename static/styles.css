@@ -4,7 +4,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, #6a11cb, #2575fc);
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
   background-attachment: fixed;
   color: #f0f0f0;
   line-height: 1.6;
@@ -12,6 +12,11 @@ body {
 
 .landing-container {
   font-size: x-large;
+  margin-bottom: 100px;
+}
+
+.about-text {
+  padding: 20px;
 }
 
 .gradient-scroll {
@@ -24,7 +29,9 @@ body {
 .jumbotron {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: #f0f0f0;
+  justify-content: center;
   padding: 6rem 2rem;
+  margin: 50px auto;
   width: fit-content;
 }
 
@@ -34,6 +41,11 @@ body {
   color: #f0f0f0;
   text-transform: uppercase;
   font-family: "Roboto Mono", monospace;
+}
+
+.flip-btn:hover {
+  color: white;
+  background: linear-gradient(to left, #6a11cb, #2575fc);
 }
 
 .badge {
@@ -46,7 +58,8 @@ body {
   border: none;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, #9f69da, #4567a0);
+  /* background: linear-gradient(to right, #9f69da, #4567a0); */
+  background: linear-gradient(to left, #6a11cb, #2575fc);
   color: white;
   transition: transform 0.5s ease-in-out;
   font-family: "Ubuntu", sans-serif;
@@ -92,10 +105,11 @@ body {
 .project-card:hover {
   transform: scale(1.1);
   z-index: 1;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
 .footer {
-  background: linear-gradient(180deg, #6a11cb, #2575fc);
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
   color: white;
 }
 
@@ -116,4 +130,35 @@ body {
 .skill-items img {
   padding: 2px;
   margin: 2px;
+  height: 40px;
+  width: fit-content;
+}
+
+.skill-items hr {
+  background: white;
+}
+
+.skill-band {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.skill-band-inner {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+
+.skill-band img {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
