@@ -123,7 +123,6 @@ body {
 .skill-items {
   size: 25px;
   height: fit-content;
-  width: fit-content;
   gap: 10px;
 }
 
