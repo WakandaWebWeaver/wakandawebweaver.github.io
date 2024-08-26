@@ -172,122 +172,138 @@
 
     <section id="projects" class="container my-5">
         <h2 class="section-title text-center">Projects (Hover for Info)</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card project-card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Organisation Management Tool</h5>
-                        <p class="card-text">Originally planned to be a tool for managing organisations, it's now a
-                            platform for tracking users, donations and events. Built with Flask & MongoDB</p>
-                        <a href="https://github.com/wakandawebweaver/Organisation-Management-Tool"
-                            class="btn btn-outline-primary" target="_blank">
-                            View
-                        </a>
-                        <hr>
-                        <div class="brand-logos">
-                            <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                            <img src="static/imgs/flask_logo.png" alt="Flask Logo" class="brand-logo">
-                            <img src="static/imgs/mongo_logo.png" alt="MongoDB Logo" class="brand-logo"
-                                style="width: 20px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card project-card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">HiveMind</h5>
-                        <p class="card-text">A social media platform for Students, to share their posts, discussions and
-                            access study
-                            materials. AWS, MongoDB & Flask.
-                        </p>
-                        <a href="https://github.com/wakandawebweaver/HiveMind" class="btn btn-outline-primary"
-                            target="_blank">
-                            View
-                        </a>
-                        <hr>
-                        <div class="brand-logos">
-                            <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                            <img src="static/imgs/flask_logo.png" alt="Flask Logo" class="brand-logo">
-                            <img src="static/imgs/mongo_logo.png" alt="MongoDB Logo" class="brand-logo"
-                                style="width: 20px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card project-card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Nudity Detection</h5>
-                        <p class="card-text">An ML model/program to detect Nudity in images. TensorFlow, Keras &
-                            OpenCV.
-                        </p>
-                        <a href="https://github.com/wakandawebweaver/nudity_detection" class="btn btn-outline-primary"
-                            target="_blank">
-                            View
-                        </a>
-                        <hr>
-                        <div class="brand-logos">
-                            <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                            <img src="static/imgs/hf_logo.png" alt="Hugging Face Logo" class="brand-logo">
-                            <img src="static/imgs/keras.png" alt="Keras Logo" class="brand-logo">
-                            <img src="static/imgs/tensorflow.png" alt="TensorFlow Logo" class="brand-logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card project-card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Bank Management System </h5>
-                        <p class="card-text">A TUI program to manage bank accounts and transactions. C &
-                            cJSON.</p>
-                        <a href="https://github.com/wakandawebweaver/Bank-Management-System"
-                            class="btn btn-outline-primary" target="_blank">
-                            View
-                        </a>
-                        <hr>
-                        <div class="brand-logos">
-                            <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                            <img src="static/imgs/terminal.png" alt="Terminal Logo" class="brand-logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card project-card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">VChat - Flutter Chat App</h5>
-                        <p class="card-text">A Chat App built with Flutter & Firebase. Features include sending
-                            messages,
-                            images and making posts.</p>
-                        <a href="https://github.com/wakandawebweaver/vchat" class="btn btn-outline-primary"
-                            target="_blank">
-                            View
-                        </a>
-                        <hr>
-                        <div class="brand-logos">
-                            <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                            <img src="static/imgs/flutter.png" alt="Flutter Logo" class="brand-logo"
-                                style="width: 30px;">
-                            <img src="static/imgs/firebase.png" alt="Firebase Logo" class="brand-logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card project-card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">More on <a href="https://www.github.com/wakandawebweaver"
-                                class="btn btn-outline-primary" target="_blank">
-                                <img src="static/imgs/gh_logo.png" alt="GitHub Logo" class="brand-logo"
-                                    style="width: auto;">
-                            </a></h5>
-                        <p class="card-text"></p>
+        <div class="tab-container">
+            <ul class="nav nav-tabs" id="projectTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active flip-btn" id="webdev-tab" data-toggle="tab" href="#webdev" role="tab"
+                        aria-controls="webdev" aria-selected="true">WebDev</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link flip-btn" id="ml-tab" data-toggle="tab" href="#ml" role="tab" aria-controls="ml"
+                        aria-selected="false">ML</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link flip-btn" id="scripts-tab" data-toggle="tab" href="#scripts" role="tab"
+                        aria-controls="scripts" aria-selected="false">Minor Projects</a>
+                </li>
+            </ul>
 
+            <div class="tab-content" id="projectTabContent">
+                <div class="tab-pane fade show active" id="webdev" role="tabpanel" aria-labelledby="webdev-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card project-card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organisation Management Tool</h5>
+                                    <p class="card-text">Originally planned to be a tool for managing organisations,
+                                        it's now a
+                                        platform for tracking users, donations and events. Built with Flask & MongoDB
+                                    </p>
+                                    <a href="https://github.com/wakandawebweaver/Organisation-Management-Tool"
+                                        class="btn btn-outline-primary" target="_blank">View</a>
+                                    <hr>
+                                    <div class="brand-logos">
+                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
+                                        <img src="static/imgs/flask_logo.png" alt="Flask Logo" class="brand-logo">
+                                        <img src="static/imgs/mongo_logo.png" alt="MongoDB Logo" class="brand-logo"
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card project-card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">HiveMind</h5>
+                                    <p class="card-text">A social media platform for Students, to share their posts,
+                                        discussions
+                                        and access study materials. AWS, MongoDB & Flask.</p>
+                                    <a href="https://github.com/wakandawebweaver/HiveMind"
+                                        class="btn btn-outline-primary" target="_blank">View</a>
+                                    <hr>
+                                    <div class="brand-logos">
+                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
+                                        <img src="static/imgs/flask_logo.png" alt="Flask Logo" class="brand-logo">
+                                        <img src="static/imgs/mongo_logo.png" alt="MongoDB Logo" class="brand-logo"
+                                            style="width: 20px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="ml" role="tabpanel" aria-labelledby="ml-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card project-card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nudity Detection</h5>
+                                    <p class="card-text">An ML model/program to detect Nudity in images. TensorFlow,
+                                        Keras &
+                                        OpenCV.</p>
+                                    <a href="https://github.com/wakandawebweaver/nudity_detection"
+                                        class="btn btn-outline-primary" target="_blank">View</a>
+                                    <hr>
+                                    <div class="brand-logos">
+                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
+                                        <img src="static/imgs/hf_logo.png" alt="Hugging Face Logo" class="brand-logo">
+                                        <img src="static/imgs/keras.png" alt="Keras Logo" class="brand-logo">
+                                        <img src="static/imgs/tensorflow.png" alt="TensorFlow Logo" class="brand-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="scripts" role="tabpanel" aria-labelledby="scripts-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card project-card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bank Management System</h5>
+                                    <p class="card-text">A TUI program to manage bank accounts and transactions. C &
+                                        cJSON.</p>
+                                    <a href="https://github.com/wakandawebweaver/Bank-Management-System"
+                                        class="btn btn-outline-primary" target="_blank">View</a>
+                                    <hr>
+                                    <div class="brand-logos">
+                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
+                                        <img src="static/imgs/terminal.png" alt="Terminal Logo" class="brand-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card project-card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">VChat - Flutter Chat App</h5>
+                                    <p class="card-text">A Chat App built with Flutter & Firebase. Features include
+                                        sending
+                                        messages, images and making posts.</p>
+                                    <a href="https://github.com/wakandawebweaver/vchat" class="btn btn-outline-primary"
+                                        target="_blank">View</a>
+                                    <hr>
+                                    <div class="brand-logos">
+                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
+                                        <img src="static/imgs/flutter.png" alt="Flutter Logo" class="brand-logo"
+                                            style="width: 30px;">
+                                        <img src="static/imgs/firebase.png" alt="Firebase Logo" class="brand-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <h5>More on <a href="https://www.github.com/wakandawebweaver" class="btn btn-outline-primary"
+                    target="_blank">
+                    <img src="static/imgs/gh_logo.png" alt="GitHub Logo" class="brand-logo" style="width: auto;">
+                </a>
+            </h5>
+        </div>
+
     </section>
 
     <hr class="my-5">
@@ -299,9 +315,18 @@
                     <p>Thanks for stopping by! 😄</p>
                     <p>&copy; 2024 Esvin Joshua</p>
                 </div>
-                <div class="col-md-4 mx-auto">
-                    Hosted on
-                    <img src="static/imgs/gh_logo.png" alt="GitHub Logo" class="brand-logo" style="width: auto;">
+                <div class="col-md-6 mx-auto">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p class="quote-p">Fetching quote...</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-light">
+                            <cite title="Source Title" class="quote-author">
+                                Fetching author...
+                            </cite>
+                        </figcaption>
+                    </figure>
+                    <p>Quote from <a class="text-light" href="https://quotable.io" target="_blank">Quotable.io</a></p>
                 </div>
             </div>
         </div>
@@ -368,20 +393,6 @@
 
             projectCards.forEach((card, index) => {
                 card.addEventListener("mouseenter", () => {
-                    for (let i = 0; i <= 5; i += 1) {
-                        setTimeout(() => {
-                            aboutSection.style.filter = `blur(${i}px)`;
-                            skillsSection.style.filter = `blur(${i}px)`;
-                            contactSection.style.filter = `blur(${i}px)`;
-                        }, i * 100);
-                    }
-
-                    projectCards.forEach((card, i) => {
-                        if (i !== index) {
-                            card.style.filter = "blur(10px)";
-                        }
-                    });
-
                     let title = "";
                     let description = "";
                     let titleIndex = 0;
@@ -408,14 +419,6 @@
                         card.querySelector(".card-title").textContent = defaultInfoForProjects[index].title;
                         card.querySelector(".card-text").textContent = defaultInfoForProjects[index].description;
                     }
-
-                    aboutSection.style.filter = "blur(0)";
-                    skillsSection.style.filter = "blur(0)";
-                    contactSection.style.filter = "blur(0)";
-
-                    projectCards.forEach((card, index) => {
-                        card.style.filter = "blur(0)";
-                    });
                 });
             });
 
@@ -427,6 +430,22 @@
                     band.querySelector('.skill-band-inner').style.animationPlayState = 'running';
                 });
             });
+
+            const endpoint = "https://api.quotable.io/random?tags=technology";
+
+            fetch(endpoint)
+                .then(response => response.json())
+                .then(data => {
+                    const quoteElement = document.querySelector(".quote-p");
+                    const quoteAuthor = document.querySelector(".quote-author");
+
+                    quoteElement.textContent = data.content;
+                    quoteAuthor.textContent = data.author;
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+
 
         });
 
