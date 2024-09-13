@@ -326,7 +326,6 @@
                             </cite>
                         </figcaption>
                     </figure>
-                    <p>Quote from <a class="text-light" href="https://quotable.io" target="_blank">Quotable.io</a></p>
                 </div>
             </div>
         </div>
@@ -431,7 +430,7 @@
                 });
             });
 
-            const endpoint = "https://api.quotable.io/random?tags=technology";
+            const endpoint = "https://quotes-api-self.vercel.app/quote";
 
             fetch(endpoint)
                 .then(response => response.json())
@@ -439,7 +438,7 @@
                     const quoteElement = document.querySelector(".quote-p");
                     const quoteAuthor = document.querySelector(".quote-author");
 
-                    quoteElement.textContent = data.content;
+                    quoteElement.textContent = data.quote;
                     quoteAuthor.textContent = data.author;
                 })
                 .catch(error => {
