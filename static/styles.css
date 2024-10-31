@@ -2,6 +2,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
+.profile-images {
+  position: relative;
+  width: fit-content;
+  bottom: 50px;
+  right: 80px;
+  height: 150px;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    .profile-img:nth-child(1) {
+      transform: translate(-30px, -30px);
+    }
+
+    .profile-img:nth-child(2) {
+      transform: translate(30px, 30px);
+    }
+  }
+}
+
+.profile-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+  &:nth-child(1) {
+    top: -10px;
+    left: -10px;
+  }
+
+  &:nth-child(2) {
+    top: 10px;
+    left: 10px;
+  }
+
+  &:hover {
+    transform: scale(1.4);
+    z-index: 1;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(90deg, #6a11cb, #2575fc);
@@ -48,11 +97,11 @@ body {
   border: none;
   color: #f0f0f0;
   cursor: pointer;
-}
 
-.flip-btn:hover {
-  color: #f0f0f0;
-  background: linear-gradient(to left, #6a11cb, #2575fc);
+  &:hover {
+    color: #f0f0f0;
+    background: linear-gradient(to left, #6a11cb, #2575fc);
+  }
 }
 
 .badge {
@@ -89,7 +138,7 @@ body {
   height: 40px;
 }
 
-.profile-images {
+/* .profile-images {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -105,17 +154,17 @@ body {
 
 .profile-img:hover {
   transform: scale(1.2);
-}
+} */
 
 .project-card .btn {
   background: white;
   color: black;
-}
 
-.project-card:hover {
-  transform: scale(1.1);
-  z-index: 1;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  &:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
 }
 
 .footer {
