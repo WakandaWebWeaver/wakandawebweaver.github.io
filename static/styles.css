@@ -12,16 +12,14 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
+}
 
-  &:hover {
-    .profile-img:nth-child(1) {
-      transform: translate(-30px, -30px);
-    }
+.profile-images:hover .profile-img:nth-child(1) {
+  transform: translate(-30px, -30px);
+}
 
-    .profile-img:nth-child(2) {
-      transform: translate(30px, 30px);
-    }
-  }
+.profile-images:hover .profile-img:nth-child(2) {
+  transform: translate(30px, 30px);
 }
 
 .profile-img {
@@ -33,22 +31,22 @@
   border-radius: 10%;
   transition: transform 0.3s ease, top 0.3s ease, left 0.3s ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
 
-  &:nth-child(1) {
-    top: -10px;
-    left: -10px;
-  }
+.profile-img:nth-child(1) {
+  top: -10px;
+  left: -10px;
+}
 
-  &:nth-child(2) {
-    top: 10px;
-    left: 10px;
-  }
+.profile-img:nth-child(2) {
+  top: 10px;
+  left: 10px;
+}
 
-  &:hover {
-    transform: scale(1.4);
-    z-index: 1;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
-  }
+.profile-img:hover {
+  transform: scale(1.4);
+  z-index: 1;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -97,11 +95,11 @@ body {
   border: none;
   color: #f0f0f0;
   cursor: pointer;
+}
 
-  &:hover {
-    color: #f0f0f0;
-    background: linear-gradient(to left, #6a11cb, #2575fc);
-  }
+.flip-btn:hover {
+  color: #f0f0f0;
+  background: linear-gradient(to left, #6a11cb, #2575fc);
 }
 
 .badge {
@@ -138,33 +136,15 @@ body {
   height: 40px;
 }
 
-/* .profile-images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 10%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.profile-img:hover {
-  transform: scale(1.2);
-} */
-
 .project-card .btn {
   background: white;
   color: black;
+}
 
-  &:hover {
-    transform: scale(1.1);
-    z-index: 1;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-  }
+.project-card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
 .footer {
