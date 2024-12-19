@@ -4,466 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Esvin Joshua - Developer, Musician, Student">
-    <meta name="google-site-verification" content="gqMAa_6D7YlF0o_UAv1yiqVlYtMdvNqf1cMAstFPbmo" />
-    <title>Esvin Joshua | Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Esvin Joshua | Developer & Student</title>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+
+    <script src="static/script.js" defer></script>
     <link rel="stylesheet" href="static/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 
 <body>
-    <div class="container landing-container">
-        <div class="row text-center">
-            <div class="col-md-6 mx-auto">
-                <header class="jumbotron profile-card border border-white">
-                    <div class="container profile-card-front">
-                        <div class="profile-images">
-                            <img src="static/imgs/musician.jpg" alt="Musician" class="profile-img outline-success">
-                            <img src="static/imgs/profile.jpg" alt="Developer" class="profile-img outline-success">
-                        </div>
-                        <h1 class="display-4">Esvin Joshua</h1>
-                        <div class="about-texts">
-                            <p class="lead">Developer, Student</p>
-                        </div>
-                    </div>
+    <div id="particles-js"></div>
 
-                    <div class="display-3 profile-card-back" style="display: none;">
-                        <section id="contact" class="container text-center">
-                            <h2 class="section-title">Contact: </h2>
-                            <a href="https://www.instagram.com/esvinjoshua" class="btn btn-danger m-2"
-                                target="_blank"><i class="fab fa-instagram"></i>
-                                Instagram</a>
-                            <a href="https://www.linkedin.com/in/esvin-joshua-a84215291/" class="btn btn-primary m-2"
-                                target="_blank"><i class="fab fa-linkedin"></i>
-                                LinkedIn</a>
-                            <a href="mailto:Joshua.Esvin312@gmail.com" class="btn btn-danger m-2" target="_blank"><i
-                                    class="fas fa-envelope"></i> Gmail</a>
-                        </section>
-                    </div>
-                    <div class="container">
-                        <a class="btn btn-outline-primary text-light flip-btn" onclick="flipCard()">Turn Over</a>
-                    </div>
-                </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">EJ</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <div class="profile-pictures">
+                <img src="static/imgs/profile.jpg" alt="Developer Profile" class="profile-picture" data-aos="fade-up">
+                <img src="static/imgs/musician.jpg" alt="Musician Profile" class="profile-picture" data-aos="fade-up">
             </div>
-            <div class="col-md-6">
-                <section id="about" class="container my-5">
-                    <div class="container text-center about-text">
-                        <h2 class="section-title text-center">About Me 🚀</h2>
-                        <p class="text-center">Self-Taught Developer, I love building things that make a
-                            difference. I'm
-                            currently
-                            pursuing my B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine
-                            Learning) at
-                            SIoE&T, Hyderabad, India. Take risks and push boundaries.</p>
-                    </div>
-                </section>
+            <h1>Esvin Joshua</h1>
+
+            <p>Developer • Student • Tech Enthusiast</p>
+            <div class="social-links">
+                <a href="https://github.com/wakandawebweaver" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/esvin-joshua-a84215291/" target="_blank">LinkedIn</a>
+                <a href="mailto:Joshua.Esvin312@gmail.com">Email</a>
             </div>
         </div>
-    </div>
+    </header>
 
-    <hr class="my-5">
-
-    <section id="skills" class="container my-5">
-        <h2 class="section-title text-center">Skills</h2>
-        <div class="row text-center skill-div">
-
-            <!-- Languages Section -->
-            <div class="col-sm-4 skill-items">
-                <h3>Languages 🧩</h3>
-                <div class="skill-band">
-                    <div class="skill-band-inner">
-                        <img src="https://img.shields.io/badge/Python-%233776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"
-                            alt="Python">
-                        <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"
-                            alt="JavaScript">
-                        <img src="https://img.shields.io/badge/C-%23A8B9CC.svg?&style=for-the-badge&logo=C&logoColor=black"
-                            alt="C">
-                        <img src="https://img.shields.io/badge/CSS-%231572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"
-                            alt="CSS">
-                        <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"
-                            alt="HTML">
-                        <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?&style=for-the-badge&logo=Java&logoColor=white"
-                            alt="Java">
-                        <img src="https://img.shields.io/badge/Dart-%230175C2.svg?&style=for-the-badge&logo=Dart&logoColor=white"
-                            alt="Dart">
-                    </div>
-                </div>
-                <hr>
-                <h4 class="mt-3">Other Languages 🔦</h4>
-                <div class="skill-band">
-                    <div class="skill-band-inner">
-                        <img src="https://img.shields.io/badge/Markdown-%23000000.svg?&style=for-the-badge&logo=Markdown&logoColor=white"
-                            alt="Markdown">
-                        <img src="https://img.shields.io/badge/JSON-%23000000.svg?&style=for-the-badge&logo=JSON&logoColor=blue"
-                            alt="JSON">
-                    </div>
-                </div>
-                <hr>
-            </div>
-
-            <!-- Technologies & Frameworks Section -->
-            <div class="col-sm-4 skill-items">
-                <h3>Technologies & Frameworks 🔬 ⚒️</h3>
-                <div class="skill-band">
-                    <div class="skill-band-inner">
-                        <img src="https://img.shields.io/badge/React-%2361DAFB.svg?&style=for-the-badge&logo=React&logoColor=black"
-                            alt="React">
-                        <img src="https://img.shields.io/badge/Django-%23092E20.svg?&style=for-the-badge&logo=Django&logoColor=white"
-                            alt="Django">
-                        <img src="https://img.shields.io/badge/Flask-%23000.svg?&style=for-the-badge&logo=Flask&logoColor=white"
-                            alt="Flask">
-                        <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white"
-                            alt="Flutter">
-                        <img src="https://img.shields.io/badge/Git-%23F05032.svg?&style=for-the-badge&logo=Git&logoColor=white"
-                            alt="Git">
-                        <img src="https://img.shields.io/badge/Docker-%232496ED.svg?&style=for-the-badge&logo=Docker&logoColor=white"
-                            alt="Docker">
-                        <img src="https://img.shields.io/badge/Firebase-%23FFCA28.svg?&style=for-the-badge&logo=Firebase&logoColor=black"
-                            alt="Firebase">
-                        <img src="https://img.shields.io/badge/SQLite-%23003B57.svg?&style=for-the-badge&logo=SQLite&logoColor=white"
-                            alt="SQLite">
-                        <img src="https://img.shields.io/badge/Heroku-%23430098.svg?&style=for-the-badge&logo=Heroku&logoColor=white"
-                            alt="Heroku">
-                        <img src="https://img.shields.io/badge/Node.js-%23339933.svg?&style=for-the-badge&logo=Node.js&logoColor=white"
-                            alt="Node.js">
-                        <img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?&style=for-the-badge&logo=Bootstrap&logoColor=white"
-                            alt="Bootstrap">
-                    </div>
-                </div>
-                <hr>
-            </div>
-
-            <!-- OS Experience Section -->
-            <div class="col-sm-4 skill-items">
-                <h3>OS Experience 💻</h3>
-                <div class="skill-band">
-                    <div class="skill-band-inner">
-                        <img src="https://img.shields.io/badge/Linux-%23FCC624.svg?&style=for-the-badge&logo=Linux&logoColor=black"
-                            alt="Linux">
-                        <img src="https://img.shields.io/badge/Windows-%230078D6.svg?&style=for-the-badge&logo=Windows&logoColor=white"
-                            alt="Windows">
-                        <img src="https://img.shields.io/badge/MacOS-%23999999.svg?&style=for-the-badge&logo=Apple&logoColor=white"
-                            alt="MacOS">
-                    </div>
-                </div>
-                <hr>
-                <h3 class="mt-3">Tools 🛠️</h3>
-                <div class="skill-band">
-                    <div class="skill-band-inner">
-                        <img src="https://img.shields.io/badge/PyCharm-%23000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=green"
-                            alt="PyCharm">
-                        <img src="https://img.shields.io/badge/Jupyter-%23F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white"
-                            alt="Jupyter">
-                        <img src="https://img.shields.io/badge/GitKraken-%236E5494.svg?&style=for-the-badge&logo=GitKraken&logoColor=white"
-                            alt="GitKraken">
-                        <img src="https://img.shields.io/badge/Netlify-%2300C7B7.svg?&style=for-the-badge&logo=Netlify&logoColor=white"
-                            alt="Netlify">
-                        <img src="https://img.shields.io/badge/MongoDB-%2347A248.svg?&style=for-the-badge&logo=MongoDB&logoColor=white"
-                            alt="MongoDB">
-                    </div>
-                </div>
-                <hr>
-            </div>
-        </div>
-    </section>
-
-    <hr class="my-5">
-
-    <section id="projects" class="container my-5">
-        <h2 class="section-title text-center">Projects (Hover for Info)</h2>
-        <div class="tab-container">
-            <ul class="nav nav-tabs" id="projectTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active flip-btn" id="webdev-tab" data-toggle="tab" href="#webdev" role="tab"
-                        aria-controls="webdev" aria-selected="true">WebDev</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link flip-btn" id="ml-tab" data-toggle="tab" href="#ml" role="tab" aria-controls="ml"
-                        aria-selected="false">ML</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link flip-btn" id="scripts-tab" data-toggle="tab" href="#scripts" role="tab"
-                        aria-controls="scripts" aria-selected="false">Minor Projects</a>
-                </li>
-            </ul>
-
-            <div class="tab-content" id="projectTabContent">
-                <div class="tab-pane fade show active" id="webdev" role="tabpanel" aria-labelledby="webdev-tab">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card project-card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">Organisation Management Tool</h5>
-                                    <p class="card-text">Originally planned to be a tool for managing organisations,
-                                        it's now a
-                                        platform for tracking users, donations and events. Built with Flask & MongoDB
-                                    </p>
-                                    <a href="https://github.com/wakandawebweaver/Organisation-Management-Tool"
-                                        class="btn btn-outline-primary" target="_blank">View</a>
-                                    <hr>
-                                    <div class="brand-logos">
-                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                                        <img src="static/imgs/flask_logo.png" alt="Flask Logo" class="brand-logo">
-                                        <img src="static/imgs/mongo_logo.png" alt="MongoDB Logo" class="brand-logo"
-                                            style="width: 20px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card project-card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">HiveMind</h5>
-                                    <p class="card-text">A social media platform for Students, to share their posts,
-                                        discussions
-                                        and access study materials. AWS, MongoDB & Flask.</p>
-                                    <a href="https://github.com/wakandawebweaver/HiveMind"
-                                        class="btn btn-outline-primary" target="_blank">View</a>
-                                    <hr>
-                                    <div class="brand-logos">
-                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                                        <img src="static/imgs/flask_logo.png" alt="Flask Logo" class="brand-logo">
-                                        <img src="static/imgs/mongo_logo.png" alt="MongoDB Logo" class="brand-logo"
-                                            style="width: 20px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="ml" role="tabpanel" aria-labelledby="ml-tab">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card project-card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">Nudity Detection</h5>
-                                    <p class="card-text">An ML model/program to detect Nudity in images. TensorFlow,
-                                        Keras &
-                                        OpenCV.</p>
-                                    <a href="https://github.com/wakandawebweaver/nudity_detection"
-                                        class="btn btn-outline-primary" target="_blank">View</a>
-                                    <hr>
-                                    <div class="brand-logos">
-                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                                        <img src="static/imgs/hf_logo.png" alt="Hugging Face Logo" class="brand-logo">
-                                        <img src="static/imgs/keras.png" alt="Keras Logo" class="brand-logo">
-                                        <img src="static/imgs/tensorflow.png" alt="TensorFlow Logo" class="brand-logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="scripts" role="tabpanel" aria-labelledby="scripts-tab">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card project-card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bank Management System</h5>
-                                    <p class="card-text">A TUI program to manage bank accounts and transactions. C &
-                                        cJSON.</p>
-                                    <a href="https://github.com/wakandawebweaver/Bank-Management-System"
-                                        class="btn btn-outline-primary" target="_blank">View</a>
-                                    <hr>
-                                    <div class="brand-logos">
-                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                                        <img src="static/imgs/terminal.png" alt="Terminal Logo" class="brand-logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card project-card mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">VChat - Flutter Chat App</h5>
-                                    <p class="card-text">A Chat App built with Flutter & Firebase. Features include
-                                        sending
-                                        messages, images and making posts.</p>
-                                    <a href="https://github.com/wakandawebweaver/vchat" class="btn btn-outline-primary"
-                                        target="_blank">View</a>
-                                    <hr>
-                                    <div class="brand-logos">
-                                        <img src="static/imgs/octocat.png" alt="Octocat Logo" class="brand-logo">
-                                        <img src="static/imgs/flutter.png" alt="Flutter Logo" class="brand-logo"
-                                            style="width: 30px;">
-                                        <img src="static/imgs/firebase.png" alt="Firebase Logo" class="brand-logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h5>More on <a href="https://www.github.com/wakandawebweaver" class="btn btn-outline-primary"
-                    target="_blank">
-                    <img src="static/imgs/gh_logo.png" alt="GitHub Logo" class="brand-logo" style="width: auto;">
-                </a>
-            </h5>
-        </div>
-
-    </section>
-
-    <hr class="my-5">
-
-    <footer class="footer text-center py-4">
+    <section class="skills">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark"
-                        data-type="HORIZONTAL" data-vanity="esvin-joshua" data-version="v1"><a
-                            class="badge-base__link LI-simple-link"
-                            href="https://in.linkedin.com/in/esvin-joshua?trk=profile-badge"></a></div>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
                 </div>
-                <div class="col-md-4 mx-auto">
-                    <p>Thanks for stopping by! 😄</p>
-                    <p>&copy; 2024 Esvin Joshua</p>
+                <div class="skill-category">
+                    <h3>Frameworks & Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
                 </div>
-                <div class="col-md-4 mx-auto">
-                    <figure>
-                        <blockquote class="blockquote">
-                            <p class="quote-p">Fetching quote...</p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer text-light">
-                            <cite title="Source Title" class="quote-author">
-                                Fetching author...
-                            </cite>
-                        </figcaption>
-                    </figure>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Heroku</span>
+                        <span class="skill-tag">PyCharm</span>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Organisation Management Tool</h3>
+                    <p>A platform for tracking users, donations and events, built with Flask & MongoDB. Features
+                        donation verification and user management.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/wakandawebweaver/Organisation-Management-Tool" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>HiveMind</h3>
+                    <p>A social media platform for students to share posts, discussions, and access study materials.
+                        Built with AWS, MongoDB & Flask.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/wakandawebweaver/HiveMind" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Nudity Detection</h3>
+                    <p>An ML model/program to detect nudity in images using TensorFlow, Keras & OpenCV.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/wakandawebweaver/nudity_detection" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>VChat - Flutter Chat App</h3>
+                    <p>A chat application built with Flutter & Firebase, featuring message sharing, image sharing, and
+                        post creation.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/wakandawebweaver/vchat" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>More on GitHub</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/wakandawebweaver/" target="_blank">View More Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline" id="timeline">
+        <div class="container">
+            <h2 class="section-title">Journey</h2>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2023 - Present</h3>
+                    <p>B.Tech in Computer Science (AI & ML) at SIoE&T, Hyderabad</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2021</h3>
+                    <p>init Self-taught Development & Programming Journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>Hyderabad, India</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Let's Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/wakandawebweaver" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/esvin-joshua-a84215291/" target="_blank">LinkedIn</a>
+                        <a href="mailto:Joshua.Esvin312@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-section">
+                <p>"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+                <span class="quote-author">- Winston Churchill</span>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Esvin Joshua. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            const aboutSection = document.querySelector("#about");
-            const skillsSection = document.querySelector("#skills");
-            const contactSection = document.querySelector("#contact");
-
-            const projectCards = document.querySelectorAll(".project-card");
-
-            const infoForProjects = [
-                {
-                    title: "Organisation Management Tool",
-                    description: "A Simple web-app to manage users and the donations given to an organization. The app has a feature where donors can share a screenshot of their donation and the program will verify the donation amount."
-                },
-                {
-                    title: "HiveMind",
-                    description: "A social media website that has features like making posts, commenting, following a user and etc. This whole thing is college specific i.e., you can only use this website while being within your college domain"
-                },
-                {
-                    title: "Nudity Detection",
-                    description: "A simple python script to detect nudity in images. Huggingface Model repo: https://huggingface.co/esvinj312/nudity-detection"
-                },
-                {
-                    title: "Bank Management System",
-                    description: "A C program to simulate a banking experience. Includes features such as pin change, pin recovery etc."
-                },
-                {
-                    title: "VChat - Flutter Chat App",
-                    description: "A Flutter Chat App with Firebase backend. Features include sending messages, images and making posts. The app also allows you to set chat and app background."
-                }
-
-            ];
-
-            const defaultInfoForProjects = [
-                {
-                    title: "Organisation Management Tool",
-                    description: "Originally planned to be a tool for managing organisations, it's now a platform for tracking users, donations and events. Built with Flask & MongoDB"
-                },
-                {
-                    title: "HiveMind",
-                    description: "A social media platform for Students, to share their posts, discussions and access study materials. AWS, MongoDB & Flask."
-                },
-                {
-                    title: "Nudity Detection",
-                    description: "An ML model/program to detect Nudity in images. TensorFlow, Keras & OpenCV."
-                },
-                {
-                    title: "Bank Management System",
-                    description: "A TUI program to manage bank accounts and transactions. C & cJSON."
-                },
-                {
-                    title: "VChat - Flutter Chat App",
-                    description: "A Chat App built with Flutter & Firebase. Features include sending messages, images and making posts."
-                },
-            ];
-
-            projectCards.forEach((card, index) => {
-                card.addEventListener("mouseenter", () => {
-                    let title = "";
-                    let description = "";
-                    let titleIndex = 0;
-                    let descriptionIndex = 0;
-
-                    const interval = setInterval(() => {
-                        if (titleIndex < infoForProjects[index].title.length) {
-                            title += infoForProjects[index].title[titleIndex];
-                            card.querySelector(".card-title").textContent = title;
-                            titleIndex++;
-                        } else {
-                            clearInterval(interval);
-                        }
-                    }, 50);
-
-                    card.querySelector(".card-text").textContent = infoForProjects[index].description;
-
-                });
-
-                card.addEventListener("mouseleave", () => {
-
-
-                    if (card.querySelector(".card-title").textContent !== "More on ") {
-                        card.querySelector(".card-title").textContent = defaultInfoForProjects[index].title;
-                        card.querySelector(".card-text").textContent = defaultInfoForProjects[index].description;
-                    }
-                });
-            });
-
-            document.querySelectorAll('.skill-band').forEach(band => {
-                band.addEventListener('mouseover', () => {
-                    band.querySelector('.skill-band-inner').style.animationPlayState = 'paused';
-                });
-                band.addEventListener('mouseout', () => {
-                    band.querySelector('.skill-band-inner').style.animationPlayState = 'running';
-                });
-            });
-
-            const endpoint = "https://quotes-api-self.vercel.app/quote";
-
-            fetch(endpoint)
-                .then(response => response.json())
-                .then(data => {
-                    const quoteElement = document.querySelector(".quote-p");
-                    const quoteAuthor = document.querySelector(".quote-author");
-
-                    quoteElement.textContent = data.quote;
-                    quoteAuthor.textContent = data.author;
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                });
-
-
-        });
-
-
-        function flipCard() {
-            const profileCardFront = document.querySelector(".profile-card-front");
-            const profileCardBack = document.querySelector(".profile-card-back");
-
-            profileCardFront.style.display = profileCardFront.style.display === "none" ? "block" : "none";
-            profileCardBack.style.display = profileCardBack.style.display === "none" ? "block" : "none";
-        }
-    </script>
 </body>
 
 </html>
