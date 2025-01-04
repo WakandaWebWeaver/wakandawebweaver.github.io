@@ -1,7 +1,3 @@
-AOS.init({
-  duration: 1200,
-});
-
 ScrollReveal().reveal(".section-title", {
   duration: 2000,
   origin: "left",
@@ -13,13 +9,19 @@ ScrollReveal().reveal(".skill-tag", {
   distance: "30px",
   interval: 100,
 });
-ScrollReveal().reveal(".project-card", {
+ScrollReveal().reveal(".projects-grid", {
   duration: 1500,
   origin: "bottom",
   distance: "30px",
   interval: 100,
 });
 ScrollReveal().reveal(".timeline-item", {
+  duration: 1500,
+  origin: "bottom",
+  distance: "30px",
+  interval: 100,
+});
+ScrollReveal().reveal(".footer-section", {
   duration: 1500,
   origin: "bottom",
   distance: "30px",
@@ -38,35 +40,13 @@ particlesJS("particles-js", {
     color: {
       value: "#ffffff",
     },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "#000000",
-      },
-      polygon: {
-        nb_sides: 5,
-      },
-    },
     opacity: {
       value: 0.5,
       random: false,
-      anim: {
-        enable: false,
-        speed: 1,
-        opacity_min: 0.1,
-        sync: false,
-      },
     },
     size: {
       value: 3,
       random: true,
-      anim: {
-        enable: false,
-        speed: 40,
-        size_min: 0.1,
-        sync: false,
-      },
     },
     line_linked: {
       enable: true,
@@ -83,51 +63,31 @@ particlesJS("particles-js", {
       straight: false,
       out_mode: "out",
       bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200,
-      },
     },
   },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "grab",
-      },
-      onclick: {
-        enable: true,
-        mode: "push",
-      },
-      resize: true,
-    },
-    modes: {
-      grab: {
-        distance: 140,
-        line_linked: {
-          opacity: 1,
-        },
-      },
-      bubble: {
-        distance: 400,
-        size: 40,
-        duration: 2,
-        opacity: 8,
-        speed: 3,
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4,
-      },
-      push: {
-        particles_nb: 4,
-      },
-      remove: {
-        particles_nb: 2,
-      },
-    },
-  },
-  retina_detect: true,
 });
+
+let currentSection = 0;
+const sections = document.getElementsByTagName("section");
+
+window.addEventListener("wheel", (e) => {
+  if (e.deltaY > 0 && currentSection < sections.length - 1) {
+    currentSection++;
+  } else if (e.deltaY < 0 && currentSection > 0) {
+    currentSection--;
+  }
+
+  updateSections();
+});
+
+function updateSections() {
+  for (let i = 0; i < sections.length; i++) {
+    if (i === currentSection) {
+      sections[i].classList.add("active");
+    } else {
+      sections[i].classList.remove("active");
+    }
+  }
+}
+
+updateSections();
